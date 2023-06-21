@@ -2,7 +2,7 @@ from django.shortcuts import render
 from .forms import EncryptionForm, DecryptionForm
 from .aes import encrypt, decrypt
 def home(request):
-    return render(request, 'home.html')
+    return render(request, 'index.html')
 
 def encrypt_view(request):
     if request.method == 'POST':
